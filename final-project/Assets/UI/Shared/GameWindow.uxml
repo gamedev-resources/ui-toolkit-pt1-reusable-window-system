@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="game-window">
+        <Style src="project://database/Assets/UI/Shared/GameWindow.uss?fileID=7433441132597879392&amp;guid=a6eac6cd21ae8d748ac9ca7995c689d5&amp;type=3#GameWindow"/>
+        <ui:VisualElement name="content-area" style="flex-grow: 1;"/>
+        <ui:VisualElement name="title-bar">
+            <ui:Label text="WINDOW" name="title-label" class="h1"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

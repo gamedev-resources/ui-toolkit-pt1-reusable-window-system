@@ -1,0 +1,87 @@
+:root {
+    /* Heading colors */
+    --color-h1: rgb(140, 75, 61);
+    --color-h2: rgb(241, 220, 186);
+
+    /* Background images */
+    --bg-title-bar: url("project://database/Assets/Sprites/TitleBar.png?fileID=21300000&guid=875b041fbe6bb1c4ba90706b2d2b9c82&type=3#TitleBar");
+    --bg-content-area: url("project://database/Assets/Sprites/Background.png?fileID=21300000&guid=f22159fbbedffca41856aa1e010dd437&type=3#Background");
+
+    /* Fonts */
+    --font-h1: url("project://database/Assets/Fonts/LilitaOne-Regular.ttf?fileID=12800000&guid=477b40b310326f843b2eb26028b5d360&type=3#LilitaOne-Regular");
+    --font-h2: url("project://database/Assets/Fonts/Sniglet-Regular.ttf?fileID=12800000&guid=9bda390d09e687b4c909926a414d996f&type=3#Sniglet-Regular");
+}
+
+.h1 {
+    -unity-font-definition: var(--font-h1);
+    color: var(--color-h1);
+    font-size: 24px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    -unity-text-align: middle-center;
+}
+
+.h2 {
+    -unity-font-definition: var(--font-h2);
+    color: var(--color-h2);
+    font-size: 18px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    -unity-text-align: middle-center;
+}
+
+#game-window {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    overflow: visible;
+    align-content: flex-start;
+}
+
+#title-bar {
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    top: 5px;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 1;
+    background-image: var(--bg-title-bar);
+    -unity-slice-left: 0;
+    -unity-slice-right: 0;
+    -unity-slice-top: 0;
+    -unity-slice-bottom: 0;
+    width: 50%;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-scale: 0.25px;
+}
+
+#title-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+#content-area {
+    flex-grow: 1;
+    padding: 16px;
+    padding-top: 30px;
+    background-image: var(--bg-content-area);
+    -unity-slice-scale: 0.5px;
+    -unity-slice-type: sliced;
+    background-color: rgba(0, 0, 0, 0);
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
